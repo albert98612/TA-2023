@@ -54,7 +54,7 @@
                     <a href="<?= base_url(); ?>penjadwalan" class="nav-link <?= ($active_page === 'penjadwalan') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-calendar-days"></i>
                         <p>
-                            Penjadwalan
+                            Informasi Produksi
                         </p>
                     </a>
                 </li>
@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url(); ?>bahanbaku/pembelian" class="nav-link <?= ($active_page === 'pembelianlarutan') ? 'active' : ''; ?>">
+                    <a href="<?= base_url(); ?>bahanbaku/pembelian" class="nav-link <?= ($active_page === 'pembelianbahanbaku') ? 'active' : ''; ?>">
                         <i class="nav-icon far fa-circle"></i>
                         <p>
                             Pembelian Bahan Baku
@@ -83,7 +83,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url(); ?>bahanbaku/penjualan" class="nav-link <?= ($active_page === 'penjualan') ? 'active' : ''; ?>">
+                    <a href="<?= base_url(); ?>dataproduk/penjualan" class="nav-link <?= ($active_page === 'penjualan') ? 'active' : ''; ?>">
                         <i class="nav-icon far fa-circle"></i>
                         <p>
                             Penjualan
@@ -91,7 +91,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url(); ?>larutan/produksi" class="nav-link <?= ($active_page === 'produksi') ? 'active' : ''; ?>">
+                    <a href="<?= base_url(); ?>larutan/produksi" class="nav-link <?= ($active_page === 'produksilarutanep') ? 'active' : ''; ?>">
                         <i class="nav-icon far fa-circle"></i>
                         <p>
                             Produksi Larutan
@@ -99,12 +99,41 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url(); ?>larutan/electroplating" class="nav-link <?= ($active_page === 'electroplating') ? 'active' : ''; ?>">
-                        <i class="nav-icon far fa-circle"></i>
+                    <a href="javascript:;" class="nav-link">
+                        <i class="nav-icon fas fa-circle"></i>
                         <p>
                             Produksi Electro Plating
+                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url(); ?>larutan/pembersihan" class="nav-link <?= ($active_page === 'pembersihan') ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Pembersihan</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url(); ?>larutan/perendaman" class="nav-link <?= ($active_page === 'perendaman') ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>
+                                    Perendaman
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url(); ?>larutan/pewarnaan" class="nav-link <?= ($active_page === 'pewarnaan') ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Pewarnaan</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url(); ?>larutan/penjemuran" class="nav-link <?= ($active_page === 'penjemuran') ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Penjemuran</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="<?= base_url(); ?>user" class="nav-link <?= ($active_page === 'user') ? 'active' : ''; ?>">

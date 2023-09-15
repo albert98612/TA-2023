@@ -25,4 +25,10 @@ class BahanBaku extends CI_Controller
 		$data['active_page'] = 'stokbahanbaku';
 		$this->load->view('stokbahanbaku_v', $data);
 	}
+	public function pembelian()
+	{
+		$data['title'] = 'Pembelian Bahan Baku';
+		$data['active_page'] = 'pembelianbahanbaku';
+		$this->load->view('pembelianbahanbaku_v', $data);
+	}
 }

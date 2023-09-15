@@ -25,4 +25,34 @@ class Larutan extends CI_Controller
 		$data['active_page'] = 'stoklarutan';
 		$this->load->view('stoklarutan_v', $data);
 	}
+	public function produksi()
+	{
+		$data['title'] = 'Produksi larutan';
+		$data['active_page'] = 'produksilarutanep';
+		$this->load->view('produksilarutanep_v', $data);
+	}
+	public function pembersihan()
+	{
+		$data['title'] = 'Tahap Pembersihan';
+		$data['active_page'] = 'pembersihan';
+		$this->load->view('pembersihan_v', $data);
+	}
+	public function perendaman()
+	{
+		$data['title'] = 'Tahan Perendaman';
+		$data['active_page'] = 'perendaman';
+		$this->load->view('perendaman_v', $data);
+	}
+	public function pewarnaan()
+	{
+		$data['title'] = 'Tahap Pewarnaan';
+		$data['active_page'] = 'pewarnaan';
+		$this->load->view('pewarnaan_v', $data);
+	}
+	public function penjemuran()
+	{
+		$data['title'] = 'Tahap Penjemuran';
+		$data['active_page'] = 'penjemuran';
+		$this->load->view('penjemuran_v', $data);
+	}
 }

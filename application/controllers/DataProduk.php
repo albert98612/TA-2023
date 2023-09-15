@@ -25,4 +25,11 @@ class DataProduk extends CI_Controller
 		$data['active_page'] = 'pendataan';
 		$this->load->view('dataproduk_v', $data);
 	}
+	public function penjualan()
+	{
+		$data['title'] = 'Penjualan';
+		$data['active_page'] = 'penjualan';
+		$this->load->view('penjualan_v', $data);
+	}
+
 }
