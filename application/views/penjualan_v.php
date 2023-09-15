@@ -267,7 +267,7 @@
           <div class="form-group">
             <label for="inputnomortransaksi" class="col-sm-4 col-form-label">Nomor Transaksi</label>
             <div class="input-group col-sm-5">
-              <select id="inputnomortransaksi" class="form-control" style="width: 100%;"></select>
+                  <input type="text" class="form-control" id="inputnomortransaksi" readonly>
             </div>
             <!-- /.input group -->
           </div>
